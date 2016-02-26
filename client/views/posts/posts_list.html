@@ -1,0 +1,6 @@
+<template name="postsList">
+  {{#each posts}}
+  	<h1><a href="{{pathForPost}}">{{title}}</a></h1> 
+  	<img src="{{image.url}}" width="640px">
+  {{/each}}
+</template>

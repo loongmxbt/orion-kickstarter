@@ -1,0 +1,26 @@
+<template name="postItem">
+  <div class="container">
+	<header>
+      <h1>Post Page</h1>
+      <a href="/">Back</a>
+    </header>
+
+	{{#if Template.subscriptionsReady}}  
+      {{#with post}}
+        <h3>{{title}}</h3>
+        <img src="{{image.url}}" width="640px">
+        <br>
+        {{{body}}}
+      {{/with}}
+    {{else}}
+      <p>Loading...</p>
+    {{/if}}
+
+    <hr>
+    
+    <footer>
+      <p>Orion Blog</p>
+    </footer>
+  </div>
+  
+</template>
